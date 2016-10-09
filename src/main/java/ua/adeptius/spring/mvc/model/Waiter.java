@@ -3,10 +3,7 @@ package ua.adeptius.spring.mvc.model;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -26,7 +23,7 @@ public class Waiter extends Employee {
         sb.append("   name = ").append(name).append("\n");
         sb.append("   surname = ").append(surname).append("\n");
         sb.append("   orders = {\n");
-        orders.forEach(order -> sb.append("   	").append(order).append("\n"));
+//        orders.forEach(order -> sb.append("   	").append(order).append("\n"));
         sb.append(" )\n");
         sb.append(")\n");
         return sb.toString();

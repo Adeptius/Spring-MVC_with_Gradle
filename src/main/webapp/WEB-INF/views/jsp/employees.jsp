@@ -12,7 +12,7 @@
         <th>Position</th>
         <th>Salary</th>
     </tr>
-    <c:forEach items="${employees}" var="employee">
+    <c:forEach var="employee" items="${employees}" >
         <tr>
             <td>${employee.name}</td>
             <td>${employee.surname}</td>

@@ -3,8 +3,8 @@ package ua.adeptius.spring.mvc.dao.hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-import ua.adeptius.spring.mvc.dao.EmployeeDao;
 import ua.adeptius.spring.mvc.model.Employee;
+import ua.adeptius.spring.mvc.dao.EmployeeDao;
 
 import java.util.List;
 
@@ -38,7 +38,9 @@ public class HEmployeeDao implements EmployeeDao {
     @Override
     public List<Employee> findAll() {
         Session session = sessionFactory.getCurrentSession();
-        return session.createQuery("select e from Employee e").list();
+        Query query = session.createQuery("select e from Employee e");
+        List<Employee> list = query.list();
+        return list;
     }
 
     @Override

@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import ua.adeptius.spring.mvc.dao.DishDao;
 import ua.adeptius.spring.mvc.model.Dish;
+import ua.adeptius.spring.mvc.model.Employee;
 
 import java.util.List;
 

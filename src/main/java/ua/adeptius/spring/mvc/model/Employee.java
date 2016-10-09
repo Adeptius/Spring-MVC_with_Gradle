@@ -4,7 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
-@Entity // Этот обьект - строка в БД
+@Entity(name = "Employee") // Этот обьект - строка в БД
 @Table(name = "employee") // имя таблицы
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Employee {
@@ -91,5 +91,29 @@ public class Employee {
 
     public void setSalary(Float salary) {
         this.salary = salary;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public Position getPosition() {
+        return position;
+    }
+
+    public Float getSalary() {
+        return salary;
     }
 }
