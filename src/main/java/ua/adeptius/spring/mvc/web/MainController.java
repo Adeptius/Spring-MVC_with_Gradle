@@ -13,7 +13,7 @@ public class MainController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Map<String, Object> model){
-        model.put("Current time", new Date().toString());
+        model.put("CurrentTime", new Date().toString());
         return "index";
     }
 }

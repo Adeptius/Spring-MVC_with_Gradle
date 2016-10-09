@@ -4,6 +4,7 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Hello adept. Now is: ${Current time}</h1>
+<h1>Hello adept. Now is: ${CurrentTime}</h1>
+<a href="/employees">Show all employees</a>
 </body>
 </html>
