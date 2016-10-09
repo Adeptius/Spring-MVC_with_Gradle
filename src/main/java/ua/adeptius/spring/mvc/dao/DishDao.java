@@ -1,7 +1,7 @@
 package ua.adeptius.spring.mvc.dao;
 
 
-import ua.adeptius.jdbc.model.Dish;
+import ua.adeptius.spring.mvc.model.Dish;
 
 import java.util.List;
 

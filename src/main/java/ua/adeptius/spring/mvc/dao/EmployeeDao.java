@@ -1,6 +1,7 @@
 package ua.adeptius.spring.mvc.dao;
 
-import ua.adeptius.jdbc.model.Employee;
+
+import ua.adeptius.spring.mvc.model.Employee;
 
 import java.util.List;
 

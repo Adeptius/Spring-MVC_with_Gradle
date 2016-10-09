@@ -1,8 +1,8 @@
 package ua.adeptius.spring.mvc.dao.hibernate;
 
 import org.hibernate.SessionFactory;
-import ua.adeptius.jdbc.dao.OrderDao;
-import ua.adeptius.jdbc.model.Order;
+import ua.adeptius.spring.mvc.dao.OrderDao;
+import ua.adeptius.spring.mvc.model.Order;
 
 import java.util.List;
 

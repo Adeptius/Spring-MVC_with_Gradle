@@ -1,6 +1,7 @@
 package ua.adeptius.spring.mvc.dao;
 
-import ua.adeptius.jdbc.model.Order;
+
+import ua.adeptius.spring.mvc.model.Order;
 
 import java.util.List;
 

@@ -3,8 +3,8 @@ package ua.adeptius.spring.mvc.dao.hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-import ua.adeptius.jdbc.dao.DishDao;
-import ua.adeptius.jdbc.model.Dish;
+import ua.adeptius.spring.mvc.dao.DishDao;
+import ua.adeptius.spring.mvc.model.Dish;
 
 import java.util.List;
 

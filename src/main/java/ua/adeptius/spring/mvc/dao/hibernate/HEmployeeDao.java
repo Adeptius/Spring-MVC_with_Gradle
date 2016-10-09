@@ -3,8 +3,8 @@ package ua.adeptius.spring.mvc.dao.hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-import ua.adeptius.jdbc.dao.EmployeeDao;
-import ua.adeptius.jdbc.model.Employee;
+import ua.adeptius.spring.mvc.dao.EmployeeDao;
+import ua.adeptius.spring.mvc.model.Employee;
 
 import java.util.List;
 
