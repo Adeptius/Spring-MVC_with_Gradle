@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 import ua.adeptius.spring.mvc.model.Employee;
 import ua.adeptius.spring.mvc.model.Position;
 import ua.adeptius.spring.mvc.service.EmployeeService;
@@ -27,14 +29,18 @@ public class EmloyeeController {
     public String employees(Map<String, Object> model){
         model.put("employees", employeeService.getEmployees());
         return "employees";
+    }
 
-//        Employee employee = new Employee();
-//        employee.setName("Mary");
-//        employee.setPosition(Position.WAITER);
-//        employee.setSalary(25000.0F);
-//        employee.setSurname("Smith");
-//        List<Employee> employeeList = new ArrayList<Employee>();
-//        employeeList.add(employee);
-//        model.put("employees", employeeList);
+    @RequestMapping(value = "/employee", method = RequestMethod.GET)
+    public ModelAndView employees(@RequestParam("employeeName") String employeeName){
+        ModelAndView modelAndView = new ModelAndView();
+
+//        Добавляем модель
+        modelAndView.addObject("employee", employeeService.getEmployeeByName(employeeName));
+
+//        Даём логическое имя модели
+        modelAndView.setViewName("employee");
+        return modelAndView;
+
     }
 }
